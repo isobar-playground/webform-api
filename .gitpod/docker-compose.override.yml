@@ -1,0 +1,5 @@
+version: "3.9"
+services:
+  php:
+    environment:
+      DRUSH_OPTIONS_URI: "https://80-${HOSTNAME}.${GITPOD_WORKSPACE_CLUSTER_HOST}"      

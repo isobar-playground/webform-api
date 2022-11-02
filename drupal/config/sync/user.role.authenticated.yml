@@ -1,0 +1,20 @@
+uuid: 56fb52f9-b2c2-43c7-8df5-8de09c64884d
+langcode: en
+status: true
+dependencies:
+  config:
+    - rest.resource.webform_rest_submit
+  module:
+    - media
+    - rest
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'restful post webform_rest_submit'
+  - 'view media'

@@ -1,0 +1,25 @@
+#
+# A Drush configuration file
+#
+# Docs at https://github.com/drush-ops/drush/blob/master/examples/example.drush.yml
+#
+# Edit or remove this file as needed.
+command:
+  sql:
+    dump:
+      options:
+        structure-tables-key: common
+        result-file: /var/www/html/docker/mysql/files/init.sql
+
+sql:
+  structure-tables:
+    common:
+      - batch
+      - cache
+      - cache_*
+      - history
+      - search_*
+      - sessions
+      - webform_submission
+      - webform_submission_data
+      - watchdog
