@@ -5,3 +5,24 @@ tasks:
   - name: webform-api
     init: bash .gitpod/init.sh
     command: bash .gitpod/command.sh
+  - name: webform-next
+    before: cd ../webform-next
+    init: bash .gitpod/init.sh
+    command: bash .gitpod/command.sh
+
+additionalRepositories:
+  - url: https://github.com/isobar-playground/webform-next
+    checkoutLocation: webform-next
+
+workspaceLocation: webform-api/main.code-workspace
+
+ports:
+  - port: 80
+    visibility: public
+    onOpen: open-browser
+  - port: 3000
+    visibility: public
+    onOpen: open-browser
+  - port: 8080
+    visibility: private
+    onOpen: ignore

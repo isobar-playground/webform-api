@@ -1,0 +1,10 @@
+{
+    "folders": [
+        {
+            "path": "." // API repository.
+        },
+        {
+            "path": "../webform-next" // Frontend repository.
+        },
+    ],
+}
