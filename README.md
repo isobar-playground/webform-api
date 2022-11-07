@@ -1,4 +1,4 @@
-# Drupal Commerce example Gitpod project
+# Drupal Webform example Gitpod project
 
 This repository contains an example of Docker and Gitpod
 based repository with Drupal Webform demo.
